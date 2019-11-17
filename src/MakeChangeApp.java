@@ -23,6 +23,7 @@ public class MakeChangeApp {
 			System.out.println(change + " is still owed! Please try again.");
 			
 		}
+		kb.close();
 
 	}
 
