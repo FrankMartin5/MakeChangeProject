@@ -1,18 +1,12 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class MakeChangeApp {
 
 	public static void main(String[] args) {
 			Scanner kb = new Scanner(System.in);
-			double itemPrice = 0, amountPaid = 0;
-			double twenties = 20;
-			double tens = 10;
-			double fives = 5;
-			double ones = 1;
-			double quarters = 0.25;
-			double dimes = 0.10;
-			double nickels = 0.05; 
-			double pennies = 0.01;	
+			double itemPrice = 0, amountPaid = 0;	
+			double change = amountPaid - itemPrice;
 			
 			
 			System.out.println("What was the price of your item? ");
@@ -20,8 +14,18 @@ public class MakeChangeApp {
 			
 			System.out.println("How much are you paying?");
 			amountPaid = kb.nextDouble();
+			
+			if (amountPaid == itemPrice) {
+				System.out.println("No change needed since you paid the exact amount.");
+			} else if(amountPaid < itemPrice) {
+				System.out.println(change + " is still owed!");
+			}
 				
 			}
+	public static void change(double change) {
+		int twenties, tens, fives, ones, quarters, dimes, nickels, pennies;
+		
+	}
 
 	}
 
