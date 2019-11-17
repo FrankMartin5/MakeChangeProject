@@ -12,7 +12,7 @@ public class MakeChangeApp {
 		System.out.println("How much are you paying?");
 		amountPaid = kb.nextDouble();
 
-		double change = itemPrice - amountPaid;
+		double change = amountPaid - itemPrice;
 		if (amountPaid == itemPrice) {
 			System.out.println("No change needed since you paid the exact amount.");
 		} else if (amountPaid > itemPrice) {
@@ -20,23 +20,8 @@ public class MakeChangeApp {
 			System.out.println("Thank you have a great day.");
 		}
 		if (amountPaid < itemPrice) {
-			System.out.println(change + " is still owed! Do you want to countinue with this purchase?");
-			System.out.println("Enter Y or N: ");
-			String input = kb.next();
-			if (input.equalsIgnoreCase("N")) {
-				System.out.println("Thank you. No sale was made.");
-			}
-			if (input.equalsIgnoreCase("Y")) {
-				System.out.println("Enter the item price: ");
-				itemPrice = kb.nextDouble();
-				System.out.println("Please enter the amount you are paying: ");
-				amountPaid = kb.nextDouble();
-				if(amountPaid == itemPrice) {
-				System.out.println("Thank you have a great day.");
-				} else {
-					change(change);
-				}
-			}
+			System.out.println(change + " is still owed! Please try again.");
+			
 		}
 
 	}
