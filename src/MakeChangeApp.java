@@ -20,7 +20,8 @@ public class MakeChangeApp {
 			System.out.println("Thank you have a great day.");
 		}
 		if (amountPaid < itemPrice) {
-			System.out.println(change + " is still owed! Please try again.");
+			System.out.printf("%.2f",change);
+			System.out.print(" is still owed! Please try again.");
 			
 		}
 		kb.close();
