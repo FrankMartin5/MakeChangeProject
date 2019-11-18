@@ -10,7 +10,9 @@ Similar to a cash register. This is my second project.
 + Loops
 + Modulus
 + If statements
-+ Methods
++ Static Methods
++ int vs double
+
 
 
 ### Technologies Used
